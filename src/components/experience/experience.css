@@ -1,0 +1,74 @@
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience__card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+    text-align: center;
+    transition: var(--default-transition);
+}
+
+.experience__card:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.experience__card h3 {
+    color: var(--color-primary);
+    padding-bottom: 2rem;
+}
+
+.experience__skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience__skill {
+    display: flex;
+}
+
+.skill__content {
+    text-align: start;
+    padding-left: 1rem;
+}
+
+.skill__icon {
+    margin-top: 3px;
+    color: var(--color-primary);
+}
+
+/* MEDIA QUERIES (Medium) */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__card {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__skill {
+        padding: 1rem;
+    }
+}
+
+/* MEDIA QUERIES (Small) */
+@media screen and (max-width: 600px) {
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__card {
+        width: 100%;
+        padding: 2rem 0;
+    }
+}
